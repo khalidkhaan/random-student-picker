@@ -33,6 +33,14 @@ def buildFinalStudentsList(givenNameIdDict, finalDistributedList):
     overAllDict['Total Mark'] = None
     return overAllDict
 
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 
 st.header('Random viva candidate picker for the CSE110, CSE111, CSE220 & CSE221 courses of BRACU', divider='grey')
 
