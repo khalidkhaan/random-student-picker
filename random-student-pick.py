@@ -35,10 +35,12 @@ def buildFinalStudentsList(givenNameIdDict, finalDistributedList):
 
 # Add custom CSS to hide the GitHub icon
 hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
+#root > div:nth-child(1) > div.withScreencast > div > div > header {
+    display: none;
 }
 """
+
+#root > div:nth-child(1) > div.withScreencast > div > div > header
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 
